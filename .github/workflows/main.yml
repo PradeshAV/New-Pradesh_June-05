@@ -17,8 +17,8 @@ jobs:
       - name: PerfAction for JMeter
         uses: QAInsights/PerfAction@v5.6.3
         with:
-          test-plan-path: './tests/Petstore_June_02.jmx'
-          results-file: 'Petstore_June_02_results.jtl'
+          test-plan-path: './Petstore_June_02.jmx'
+          results-file: 'results.jtl'
           args: '-Jthreads=10 -Jduration=60'
 
       - name: Upload JMeter Results
